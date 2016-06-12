@@ -57,6 +57,8 @@ def remove_pet_by_name (pet_shop, pet_name)
     end
 end
 
+
+
 # def remove_pet_by_name (pet_shop, pet_name)
 #   for pet in pet_shop[:pets]
 #     if

@@ -57,7 +57,8 @@ def remove_pet_by_name (pet_shop, pet_name)
     end
 end
 
-
+# -------------
+# work in progress
 
 # def remove_pet_by_name (pet_shop, pet_name)
 #   for pet in pet_shop[:pets]
@@ -68,12 +69,13 @@ end
 #   end
 # end
 
+# -------------
 
 # def customer_pet_count(customers)
 #     return customers [0][:pets].size
 # end
 
-
+# -------------
 
 
 

@@ -34,41 +34,42 @@ def pets_by_breed(pet_shop, breed)
     end
   return result
 end
-  
-# def find_pet_by_name(pet_shop, pet_name)
-#   for pet in pet_shop[:pets]
-#     if 
-#       pet[:name] == pet_name
-#       # --- I know this line below is wrong and does not work ---
-#       return pet[:name]
-#           else
-#       return nil
-#     end
-#   end
-# end
+
 
 def find_pet_by_name(pet_shop, pet_name)
   for pet in pet_shop[:pets]
     if 
       pet[:name] == pet_name
       return pet
+    #-----------
+    # managed to get test_remove_pet_by_name working with this the code below, but it stops find_pet_by_name test from working?
+    #-----------
+    # else
+    #   return nil
     end
   end
 end
 
 
-def add_pet_to_stock(pet_shop, new_pet)
-  # add a new pet to stock
-  new_pet = Hash.new
-  return pet_shop << new_pet
-  # create a hash
-  # put new pet into hash
+def remove_pet_by_name (pet_shop, pet_name)
+  for pet in pet_shop[:pets]
+      return pet.clear if pet[:name] == pet_name
+    end
 end
 
-def customer_pet_count(customers)
-  return [customers].count
-end
+# def remove_pet_by_name (pet_shop, pet_name)
+#   for pet in pet_shop[:pets]
+#     if
+#       pet[:name] == pet_name
+#       return pet.clear
+#     end
+#   end
+# end
 
+
+# def customer_pet_count(customers)
+#     return customers [0][:pets].size
+# end
 
 
 
